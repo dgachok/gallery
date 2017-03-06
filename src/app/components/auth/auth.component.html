@@ -1,0 +1,8 @@
+<form #f="ngForm" (ngSubmit)="onSubmit()" class="auth">
+  <h3>Sign in with your Account</h3>
+  <label class="auth__label" for="email">Email</label>
+  <input id="email" type="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" class="auth__input" ngModel required/>
+  <label class="auth__label" for="password">Password</label>
+  <input id="password" type="password" name="password" class="auth__input" ngModel required/>
+  <button class="auth__btn" [disabled]="!f.valid" type="submit">Submit</button>
+</form>

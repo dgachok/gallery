@@ -1,0 +1,45 @@
+.modal{
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  &__window{
+    display: inline-block;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    padding: 20px;
+    z-index: 992;
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.1);
+  }
+  &__overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 991;
+  }
+  &__close{
+    display: block;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    background: #ffff00;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+  }
+}

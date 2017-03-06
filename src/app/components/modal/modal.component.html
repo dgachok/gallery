@@ -1,0 +1,7 @@
+<div *ngIf="show" class="modal">
+  <div class="modal__window">
+    <ng-content></ng-content>
+    <a (click)="hide()" class="modal__close">Close</a>
+  </div>
+  <div (click)="hide()" class="modal__overlay"></div>
+</div>

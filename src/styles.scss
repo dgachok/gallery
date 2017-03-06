@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "app/shared/scss/reset";
+
+// Global fonts
+*, *:after, *:before {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20pt;
+  line-height: 30pt;
+}
+
+h3{
+  line-height: 40pt;
+  font-size: 18pt;
+}
+
+h4{
+  line-height: 25pt;
+  font-size: 14pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.margin_bottom_10 {
+  margin-bottom: 10px;
+}
+
+.disabled, button[disabled]{
+  opacity: 0.3 !important;
+  pointer-events: none !important;
+}

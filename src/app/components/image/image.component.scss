@@ -1,0 +1,16 @@
+.image{
+  &:hover{
+    .image__close{
+      display: block;
+    }
+  }
+  &__close{
+    display: none;
+  }
+  img{
+    width: 200px;
+  }
+}
+:host{
+  flex: auto;
+}
